@@ -3,7 +3,7 @@ version: '3.8'
 services:
   #front end docker image build
   yolo-app-frontend:
-    image: coduori/yolo-app-frontend:v1.0.0
+    image: oduori/yolo-app-frontend
     build: ./client
     container_name: yolo-app-frontend
     restart: unless-stopped
@@ -15,7 +15,7 @@ services:
       - yolo-net
   #backend docker image build
   yolo-app-backend:
-    image: coduori/yolo-app-backend:v1.0.0
+    image: oduori/yolo-app-backend
     build: ./backend
     container_name: yolo-app-backend
     restart: unless-stopped
